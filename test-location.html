@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Test</title>
+</head>
+<body>
+    <h1>Location Test</h1>
+    <button onclick="testLocation()">Get Location</button>
+    <div id="result"></div>
+    
+    <script>
+        function testLocation() {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    
+                    // PSIT center
+                    const psitLat = 26.4499;
+                    const psitLng = 80.3319;
+                    
+                    // Calculate distance
+                    const R = 6371;
+                    const dLat = (psitLat - lat) * Math.PI / 180;
+                    const dLng = (psitLng - lng) * Math.PI / 180;
+                    const a = Math.sin(dLat/2) * Math.sin(dLat/2) + 
+                             Math.cos(lat * Math.PI / 180) * Math.cos(psitLat * Math.PI / 180) * 
+                             Math.sin(dLng/2) * Math.sin(dLng/2);
+                    const distance = R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                    
+                    const isPSIT = distance <= 5;
+                    
+                    document.getElementById('result').innerHTML = `
+                        <p>Your Location: ${lat}, ${lng}</p>
+                        <p>PSIT Center: ${psitLat}, ${psitLng}</p>
+                        <p>Distance: ${distance.toFixed(2)} km</p>
+                        <p style="color: ${isPSIT ? 'green' : 'red'}; font-weight: bold;">
+                            ${isPSIT ? '✅ PSIT AREA - Should show PSIT Shop' : '❌ NOT PSIT - Should show Raj Medical'}
+                        </p>
+                    `;
+                },
+                (error) => {
+                    document.getElementById('result').innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+                }
+            );
+        }
+    </script>
+</body>
+</html>

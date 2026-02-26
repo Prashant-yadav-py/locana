@@ -1,0 +1,5 @@
+# Locana Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://locaana.vercel.app/sitemap.xml

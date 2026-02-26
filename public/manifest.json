@@ -1,0 +1,24 @@
+{
+  "name": "Locana - Local Shopping Made Easy",
+  "short_name": "Locana",
+  "description": "Discover nearby shops, reserve products, and support local businesses",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff6ee",
+  "theme_color": "#d7262f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["shopping", "lifestyle", "business"],
+  "lang": "en"
+}

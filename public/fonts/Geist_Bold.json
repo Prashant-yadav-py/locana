@@ -1,0 +1,21 @@
+{
+  "glyphs": {},
+  "familyName": "Geist",
+  "ascender": 1900,
+  "descender": -500,
+  "underlinePosition": -100,
+  "underlineThickness": 50,
+  "boundingBox": {
+    "yMin": -500,
+    "xMin": 0,
+    "yMax": 1900,
+    "xMax": 1000
+  },
+  "resolution": 1000,
+  "original_font_information": {
+    "format": 0,
+    "copyright": "Geist Font",
+    "fontFamily": "Geist",
+    "fontSubfamily": "Bold"
+  }
+}
