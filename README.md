@@ -2,7 +2,7 @@ Team Name ->Vajra
 
 Team Leader -> Prashant Yadav ->Prince Agrahari ->  Parth Gaur -> , Abhishek Singh rajawat
 
-Track 2 -> Open Inovation
+Track 4 -> Open Inovation
 
 Problem Statement 6 ->
 There is no intelligent, real-time, local discovery layer that connects customers with live inventory of
