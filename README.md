@@ -3,7 +3,7 @@
 
 
 
-Your project is live at:
+Project is live at:
 https://locaana.vercel.app/auth/login
 
 
