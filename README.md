@@ -1,4 +1,13 @@
-# Locana mobile app UI
+Team Name ->Vajra
+
+Team Leader -> Prashant Yadav ->Prince Agrahari ->  Parth Gaur -> , Abhishek Singh rajawat
+
+Track 2 -> Open Inovation
+
+Problem Statement 6 ->
+There is no intelligent, real-time, local discovery layer that connects customers with live inventory of
+nearby kirana and medical shops, leaving both customers and shop owners blind and disconnected in
+everyday commerce.
 
 
 
